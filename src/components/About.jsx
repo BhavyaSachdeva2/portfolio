@@ -2,35 +2,6 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 
-// You can keep this helper if you plan to use it elsewhere, 
-// otherwise, it is safe to remove it.
-const AnimatedCounter = ({ target, suffix = '' }) => {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    if (!isInView) return;
-    let start = 0;
-    const duration = 2000;
-    const startTime = performance.now();
-
-    const animate = (currentTime) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      const current = Math.floor(eased * target);
-      setCount(current);
-      if (progress < 1) requestAnimationFrame(animate);
-    };
-    requestAnimationFrame(animate);
-  }, [isInView, target]);
-
-  return <span ref={ref}>{count}{suffix}</span>;
-};
-
-// --- THIS IS THE FIX ---
-// The wrapper function ensures the return statement is valid.
 const About = () => {
   return (
     <section className="section" id="about" style={{ background: 'var(--clr-bg-alt)' }}>
