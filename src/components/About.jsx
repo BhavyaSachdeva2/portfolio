@@ -11,8 +11,8 @@ const About = () => {
           <ScrollReveal direction="left">
             <div className="about-image-container">
               <img
-                src="/portrait.png"
-                alt="Arnav Tanwar — Fine Art Photographer"
+                src="/portrait.jpeg"
+                alt="Arnav Tanwar"
                 loading="lazy"
               />
               <div className="about-image-border" />
