@@ -37,24 +37,30 @@ const designs = [
     id: 5,
     title: 'Elysian Craft Roastery Packaging',
     category: 'packaging',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&h=700&fit=crop',
-    client: 'Elysian Roasters',
-    year: '2025',
-    description: 'Sustainable packaging system and labels for a specialty micro-roastery. The label artwork relies on custom topographical patterns depicting the specific geographic coordinates and altitudes of bean origins, highlighted by metallic gold-foil letterpress details.',
-    tools: ['Illustrator', 'Dimension']
+    image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018247/57ad67218109517.679ba728b12dc_uhvhjh.png',
+
   },
   {
     id: 6,
     title: 'Helvetica Typographic Retrospective',
-    category: 'branding',
-    image: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=1000&h=700&fit=crop',
-    client: 'Personal Exhibition',
-    year: '2023',
-    description: 'A poster series and gallery catalogue exploring the architectural structure of modern sans-serif letterforms. By using strict grids, structural type scaling, and negative space, the series honors the enduring balance, legibility, and quiet elegance of mid-century Swiss design.',
-    tools: ['Illustrator', 'Figma']
-  }
+    category: 'Merchandise',
+    image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018527/bhavya_hoodie_final_elusmw.png',
+  },
+    {
+    id: 7,
+    title: 'Helvetica Typographic Retrospective',
+    category: 'Merchandise',
+    image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018254/b046d9217641197.6793ab577f6a2_ehvbol.png',
+  },
+  {
+    id: 8,
+    title: 'Helvetica Typographic Retrospective',
+    category: 'Merchandise',
+    image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018252/fb9f8b218102307.679b91e327047_uv9yap.png',
+  },
+  
 ];
 
-export const designCategories = ['All', 'Branding', 'UI/UX', 'Editorial', 'Packaging'];
+export const designCategories = ['All', 'Branding', 'UI/UX', 'Merchandise', 'Packaging'];
 
 export default designs;
