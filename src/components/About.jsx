@@ -63,12 +63,6 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
           <div className="about-content">
             <ScrollReveal>
               <span className="section-label">About Me</span>
-              <h2 className="section-title" style={{ textAlign: 'left' }}>
-                The Mind Behind
-                <br />
-                the Vision
-              </h2>
-              <div className="separator" style={{ margin: 'var(--space-lg) 0' }} />
             </ScrollReveal>
 
             <ScrollReveal delay={0.15}>
