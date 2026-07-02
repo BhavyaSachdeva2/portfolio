@@ -22,9 +22,10 @@ const Navbar = () => {
   };
 
   const links = [
-    { label: 'Portfolio', id: 'portfolio' },
-    { label: 'About', id: 'about' },
+    { label: 'Photos', id: 'portfolio' },
     { label: 'Videos', id: 'videos' },
+    { label: 'Design', id: 'design' },
+    { label: 'About', id: 'about' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -40,7 +41,7 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            <span className="logo-accent">A</span>lexander <span className="logo-accent">V</span>oss
+            <span className="logo-accent">A</span>rnav <span className="logo-accent">T</span>anwar
           </a>
 
           <div className="navbar-links">

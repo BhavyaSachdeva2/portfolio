@@ -55,18 +55,18 @@ const Hero = () => {
         animate="visible"
       >
         <motion.span className="hero-label" variants={itemVariants}>
-          Fine Art Photography
+          Photography • Video Editing • Graphic Design
         </motion.span>
 
         <motion.h1 className="hero-title" variants={itemVariants}>
-          Capturing <span className="title-accent">Light</span>
+          Capturing <span className="title-accent">Light</span>,
           <br />
-          & Emotion
+          Rhythm & Form
         </motion.h1>
 
         <motion.p className="hero-subtitle" variants={itemVariants}>
-          Every frame tells a story. I capture the moments that move us —
-          the light that transforms, the emotions that endure.
+          Every medium has its unique voice. I tell compelling stories through 
+          frozen light, cinematic movement, and structured visual design.
         </motion.p>
 
         <motion.button

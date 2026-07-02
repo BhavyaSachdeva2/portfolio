@@ -57,7 +57,7 @@ const About = () => {
             <div className="about-image-container">
               <img
                 src="/portrait.png"
-                alt="Alexander Voss — Fine Art Photographer"
+                alt="Arnav Tanwar — Fine Art Photographer"
                 loading="lazy"
               />
               <div className="about-image-border" />
@@ -70,36 +70,33 @@ const About = () => {
             <ScrollReveal>
               <span className="section-label">About Me</span>
               <h2 className="section-title" style={{ textAlign: 'left' }}>
-                The Eye Behind
+                The Mind Behind
                 <br />
-                the Lens
+                the Vision
               </h2>
               <div className="separator" style={{ margin: 'var(--space-lg) 0' }} />
             </ScrollReveal>
 
             <ScrollReveal delay={0.15}>
               <p className="about-text">
-                "Photography is not about what you see — it's about what you
-                feel when you see it."
+                "Design gives form to ideas, editing brings flow to time, and 
+                photography captures the light that connects them all."
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.25}>
               <p className="about-text">
-                I'm Alexander Voss, a fine art photographer based in Vienna,
-                Austria. For over a decade, I've dedicated my craft to
-                capturing the extraordinary in the ordinary — the way light
-                transforms a landscape, the raw emotion in a glance, the
-                hidden geometry of urban architecture.
+                I'm Arnav Tanwar, a multi-disciplinary visual creator specializing in photography, 
+                video editing, and graphic design. Based in Vienna, Austria, I merge clean Swiss grid structures, 
+                cinematic rhythm, and precise camera composition to build immersive visual experiences.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.35}>
               <p className="about-text">
-                My work has been featured in National Geographic, VOGUE,
-                and exhibited in galleries across Europe. I believe great
-                photography happens at the intersection of patience,
-                curiosity, and a deep respect for the moment.
+                Over the past decade, I've collaborated with art galleries, creative agencies, and luxury labels. 
+                Whether organizing a layout, grading a commercial reel, or waiting for the perfect sunset 
+                exposure, my goal remains the same: communication through uncompromising aesthetic alignment.
               </p>
             </ScrollReveal>
 
@@ -116,6 +113,35 @@ const About = () => {
                     <div className="stat-label">{stat.label}</div>
                   </div>
                 ))}
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.55}>
+              <div className="about-disciplines">
+                <div className="discipline-col">
+                  <h4 className="discipline-col-title">Photography</h4>
+                  <ul className="discipline-col-list">
+                    <li>Fine Art Landscapes</li>
+                    <li>Portraiture & Character</li>
+                    <li>Leica M Series</li>
+                  </ul>
+                </div>
+                <div className="discipline-col">
+                  <h4 className="discipline-col-title">Video Editing</h4>
+                  <ul className="discipline-col-list">
+                    <li>Cinematic Storytelling</li>
+                    <li>Resolve Color Grading</li>
+                    <li>Premiere & After Effects</li>
+                  </ul>
+                </div>
+                <div className="discipline-col">
+                  <h4 className="discipline-col-title">Graphic Design</h4>
+                  <ul className="discipline-col-list">
+                    <li>Brand Architecture</li>
+                    <li>UI/UX & Figma Systems</li>
+                    <li>Swiss Typography</li>
+                  </ul>
+                </div>
               </div>
             </ScrollReveal>
           </div>

@@ -8,9 +8,10 @@ const Footer = () => {
   };
 
   const links = [
-    { label: 'Portfolio', id: 'portfolio' },
-    { label: 'About', id: 'about' },
+    { label: 'Photos', id: 'portfolio' },
     { label: 'Videos', id: 'videos' },
+    { label: 'Design', id: 'design' },
+    { label: 'About', id: 'about' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -24,8 +25,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-top">
           <div className="footer-logo">
-            <span className="logo-accent">A</span>lexander{' '}
-            <span className="logo-accent">V</span>oss
+            <span className="logo-accent">A</span>rnav{' '}
+            <span className="logo-accent">T</span>anwar
           </div>
 
           <nav className="footer-nav">
@@ -43,7 +44,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {currentYear} Alexander Voss. All rights reserved.
+            © {currentYear} Arnav Tanwar. All rights reserved.
           </p>
 
           <motion.button

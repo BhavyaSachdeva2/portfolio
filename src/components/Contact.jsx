@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   const contactDetails = [
-    { icon: '✉', label: 'Email', value: 'hello@alexandervoss.com' },
+    { icon: '✉', label: 'Email', value: 'hello@arnavtanwar.com' },
     { icon: '☎', label: 'Phone', value: '+43 1 234 5678' },
     { icon: '📍', label: 'Location', value: 'Vienna, Austria' },
   ];
