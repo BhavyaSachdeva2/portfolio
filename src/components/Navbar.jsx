@@ -24,7 +24,7 @@ const Navbar = () => {
   const links = [
     { label: 'Photos', id: 'portfolio' },
     { label: 'Videos', id: 'videos' },
-    { label: 'Design', id: 'design' },
+    { label: 'Designs', id: 'design' },
     { label: 'About', id: 'about' },
     { label: 'Contact', id: 'contact' },
   ];
