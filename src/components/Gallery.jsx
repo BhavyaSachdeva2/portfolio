@@ -42,7 +42,10 @@ const Gallery = () => {
             <span className="section-label">Portfolio</span>
             <h2 className="section-title">Selected Works</h2>
             <div className="separator" />
-            
+            <p className="section-subtitle">
+              A curated collection of moments captured across wildlife,
+              products, events and fashion.
+            </p>            
           </div>
         </ScrollReveal>
 
