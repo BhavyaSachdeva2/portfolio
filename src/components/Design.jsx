@@ -117,9 +117,13 @@ const Design = () => {
 
                 <div className="design-modal-content">
                   {/* Left Side: Media */}
-                  <div className="design-modal-media">
-                    <img src={activeProject.image} alt={activeProject.title} />
-                  </div>
+<div className="design-modal-media" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000000' }}>
+  <img 
+    src={activeProject.image} 
+    alt={activeProject.title} 
+    style={{ objectFit: 'contain', width: '100%', height: '100%', maxHeight: '70vh' }} 
+  />
+</div>
 
                   {/* Right Side: Details */}
                   <div className="design-modal-info">
