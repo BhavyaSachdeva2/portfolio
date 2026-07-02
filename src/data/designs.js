@@ -43,19 +43,19 @@ const designs = [
   {
     id: 6,
     title: 'Helvetica Typographic Retrospective',
-    category: 'Merchandise',
+    category: 'merchandise',
     image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018527/bhavya_hoodie_final_elusmw.png',
   },
     {
     id: 7,
     title: 'Helvetica Typographic Retrospective',
-    category: 'Merchandise',
+    category: 'merchandise',
     image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018254/b046d9217641197.6793ab577f6a2_ehvbol.png',
   },
   {
     id: 8,
     title: 'Helvetica Typographic Retrospective',
-    category: 'Merchandise',
+    category: 'merchandise',
     image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783018252/fb9f8b218102307.679b91e327047_uv9yap.png',
   },
   
