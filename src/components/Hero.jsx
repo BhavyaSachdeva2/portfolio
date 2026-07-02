@@ -54,7 +54,7 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.span className="hero-lael" variants={itemVariants}>
+        <motion.span className="hero-label" variants={itemVariants}>
           Photography • Video Editing • Graphic Design
         </motion.span>
 
