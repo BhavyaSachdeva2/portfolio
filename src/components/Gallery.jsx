@@ -39,8 +39,8 @@ const Gallery = () => {
       <div className="container">
         <ScrollReveal>
           <div className="section-header">
-            <span className="section-label">Portfolio</span>
-            <h2 className="section-title">Selected Works</h2>
+            <span className="section-label">Photography</span>
+            <h2 className="section-title">My Clicks</h2>
             <div className="separator" />
             <p className="section-subtitle">
               A curated collection of moments captured across wildlife,
