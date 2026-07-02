@@ -81,7 +81,7 @@ const Design = () => {
                       <div className="design-card-meta">
                         <span className="design-card-category">{project.category}</span>
                         <h3 className="design-card-title">{project.title}</h3>
-                        <span className="design-card-link">View Case Study →</span>
+                        <span className="design-card-link">View Details →</span>
                       </div>
                     </div>
                   </div>
@@ -128,28 +128,39 @@ const Design = () => {
                       <h3 className="design-modal-title">{activeProject.title}</h3>
                       <div className="design-modal-separator" />
                       
-                      <p className="design-modal-desc">{activeProject.description}</p>
+                      {/* Safety check for description */}
+                      {activeProject.description && (
+                        <p className="design-modal-desc">{activeProject.description}</p>
+                      )}
                     </div>
 
-                    {/* Metadata table */}
-                    <div className="design-modal-meta-grid">
-                      <div className="meta-item">
-                        <span className="meta-label">Client</span>
-                        <span className="meta-val">{activeProject.client}</span>
+                    {/* Metadata table - only renders if client, year, or tools exist */}
+                    {(activeProject.client || activeProject.year || activeProject.tools) && (
+                      <div className="design-modal-meta-grid">
+                        {activeProject.client && (
+                          <div className="meta-item">
+                            <span className="meta-label">Client</span>
+                            <span className="meta-val">{activeProject.client}</span>
+                          </div>
+                        )}
+                        {activeProject.year && (
+                          <div className="meta-item">
+                            <span className="meta-label">Year</span>
+                            <span className="meta-val">{activeProject.year}</span>
+                          </div>
+                        )}
+                        {activeProject.tools && (
+                          <div className="meta-item">
+                            <span className="meta-label">Tools Used</span>
+                            <div className="meta-tools">
+                              {activeProject.tools.map((tool) => (
+                                <span key={tool} className="tool-pill">{tool}</span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
-                      <div className="meta-item">
-                        <span className="meta-label">Year</span>
-                        <span className="meta-val">{activeProject.year}</span>
-                      </div>
-                      <div className="meta-item">
-                        <span className="meta-label">Tools Used</span>
-                        <div className="meta-tools">
-                          {activeProject.tools.map((tool) => (
-                            <span key={tool} className="tool-pill">{tool}</span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               </motion.div>
