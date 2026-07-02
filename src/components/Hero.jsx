@@ -59,9 +59,9 @@ const Hero = () => {
         </motion.span>
 
         <motion.h1 className="hero-title" variants={itemVariants}>
-          Capturing <span className="title-accent">Light</span>,
-          <br />
-          Rhythm & Form
+"Design gives form to ideas, editing brings flow to time, and photography captures the light that connects them all."
+
+
         </motion.h1>
 
         <motion.p className="hero-subtitle" variants={itemVariants}>
