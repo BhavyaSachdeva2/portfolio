@@ -2,8 +2,8 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 
-// Animated counter component (Keep if you still want to use it elsewhere, 
-// otherwise you can remove this entire block too)
+// You can keep this helper if you plan to use it elsewhere, 
+// otherwise, it is safe to remove it.
 const AnimatedCounter = ({ target, suffix = '' }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -29,7 +29,8 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
   return <span ref={ref}>{count}{suffix}</span>;
 };
 
-// Main About Component
+// --- THIS IS THE FIX ---
+// The wrapper function ensures the return statement is valid.
 const About = () => {
   return (
     <section className="section" id="about" style={{ background: 'var(--clr-bg-alt)' }}>
