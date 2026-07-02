@@ -21,13 +21,10 @@ const designs = [
   },
   {
     id: 3,
-    title: 'Novus Wealth Management UX/UI',
+    title: 'LinkedIn Banner',
     category: 'ui/ux',
     image: 'https://res.cloudinary.com/z3zkffz7/image/upload/f_auto,q_auto/f77882218101415.679b90dee3143_unyl87',
-    client: 'Novus FinTech Group',
-    year: '2025',
-    description: 'End-to-end UX research and interface design for a premium wealth management application catering to high-net-worth individuals. Prioritizes dynamic visual hierarchy, interactive data visualization, dark mode accessibility, and smooth micro-interactions that make complex portfolio tracking intuitive.',
-    tools: ['Figma', 'After Effects']
+
   },
   {
     id: 4,
