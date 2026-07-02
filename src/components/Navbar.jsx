@@ -41,8 +41,8 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            <span className="logo-accent">Arnav </span>
-            <span className="logo-accent">Tanwar</span>
+            <span className="logo-accent">ARNAV </span>
+            <span className="logo-accent">TANWAR</span>
           </a>
 
           <div className="navbar-links">
