@@ -59,13 +59,11 @@ const Hero = () => {
         </motion.span>
 
       
-        <motion.p 
-  className="hero-subtitle" 
-  variants={itemVariants} 
-  style={{ color: '#ffffff' }}
->
-  "Design gives form to ideas, editing brings flow to time, and photography captures the light that connects them all."
-</motion.p>
+        <motion.p className="hero-subtitle" variants={itemVariants}>
+
+"Design gives form to ideas, editing brings flow to time, and photography captures the light that connects them all."
+
+        </motion.p>
 
         <motion.button
           className="hero-cta"
