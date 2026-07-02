@@ -41,7 +41,11 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
   );
 };
 
-
+const About = () => {
+  const stats = [
+    { number: 2, label: 'Years Experience' },
+    
+  ];
 
   return (
     <section className="section" id="about" style={{ background: 'var(--clr-bg-alt)' }}>
