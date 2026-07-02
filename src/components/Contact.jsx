@@ -23,9 +23,9 @@ const Contact = () => {
   };
 
   const contactDetails = [
-    { icon: '✉', label: 'Email', value: 'hello@arnavtanwar.com' },
-    { icon: '☎', label: 'Phone', value: '+43 1 234 5678' },
-    { icon: '📍', label: 'Location', value: 'Vienna, Austria' },
+    { icon: '✉', label: 'Email', value: 'arnavtanwarimp@gmail.com' },
+    { icon: '☎', label: 'Phone', value: '+91 96671 77206' },
+    { icon: '📍', label: 'Location', value: 'Delhi, India' },
   ];
 
   const socials = [
@@ -59,9 +59,9 @@ const Contact = () => {
           <ScrollReveal direction="left">
             <div className="contact-info">
               <p className="contact-info-text">
-                Whether you're looking for portrait sessions, landscape prints,
+                Whether you're looking for designs, edits,
                 or commercial photography — I'm here to create something
-                extraordinary with you. Every great image starts with a
+                extraordinary with you. Every great visual starts with a
                 conversation.
               </p>
 
