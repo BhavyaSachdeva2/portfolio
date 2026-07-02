@@ -137,6 +137,6 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
       </div>
     </section>
   );
-
+};
 
 export default About;
