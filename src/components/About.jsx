@@ -41,12 +41,7 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
   );
 };
 
-const About = () => {
-  const stats = [
-    { number: 12, suffix: '+', label: 'Years Experience' },
-    { number: 850, suffix: '+', label: 'Projects Completed' },
-    { number: 24, suffix: '', label: 'Awards Won' },
-  ];
+
 
   return (
     <section className="section" id="about" style={{ background: 'var(--clr-bg-alt)' }}>
@@ -87,7 +82,7 @@ const About = () => {
             <ScrollReveal delay={0.25}>
               <p className="about-text">
                 I'm Arnav Tanwar, a multi-disciplinary visual creator specializing in photography, 
-                video editing, and graphic design. Based in Vienna, Austria, I merge clean Swiss grid structures, 
+                video editing, and graphic designing. Based in Delhi, India, I merge clean Swiss grid structures, 
                 cinematic rhythm, and precise camera composition to build immersive visual experiences.
               </p>
             </ScrollReveal>
@@ -121,25 +116,25 @@ const About = () => {
                 <div className="discipline-col">
                   <h4 className="discipline-col-title">Photography</h4>
                   <ul className="discipline-col-list">
-                    <li>Fine Art Landscapes</li>
-                    <li>Portraiture & Character</li>
-                    <li>Leica M Series</li>
+                    <li>Wildlife</li>
+                    <li>Products</li>
+                    <li>Events and Fashion</li>
                   </ul>
                 </div>
                 <div className="discipline-col">
                   <h4 className="discipline-col-title">Video Editing</h4>
                   <ul className="discipline-col-list">
                     <li>Cinematic Storytelling</li>
-                    <li>Resolve Color Grading</li>
-                    <li>Premiere & After Effects</li>
+                    <li>Color Grading</li>
+                    <li>Premiere Pro</li>
                   </ul>
                 </div>
                 <div className="discipline-col">
-                  <h4 className="discipline-col-title">Graphic Design</h4>
+                  <h4 className="discipline-col-title">Graphic Designing</h4>
                   <ul className="discipline-col-list">
-                    <li>Brand Architecture</li>
-                    <li>UI/UX & Figma Systems</li>
-                    <li>Swiss Typography</li>
+                    <li>Social Media Creatives</li>
+                    <li>Merchandise</li>
+                    <li>Typography</li>
                   </ul>
                 </div>
               </div>
