@@ -39,8 +39,8 @@ const Hero = () => {
         transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
       >
         <img
-          src="/hero.png"
-          alt="Dramatic landscape photograph"
+          src="/hero.jpeg"
+          alt="sunset landscape photograph"
           loading="eager"
         />
       </motion.div>
