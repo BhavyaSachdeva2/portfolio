@@ -162,7 +162,7 @@ const Design = () => {
                     <div>
                       <span className="design-modal-category">{activeProject.category}</span>
                       <h3 className="design-modal-title" style={{ fontSize: '1.75rem', marginTop: '0.5rem' }}>{activeProject.title}</h3>
-                      <div className="design-modal-separator" />
+                      
                       
                       {activeProject.description && (
                         <p className="design-modal-desc">{activeProject.description}</p>
