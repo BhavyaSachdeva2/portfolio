@@ -33,12 +33,12 @@ const Design = () => {
       <div className="container">
         <ScrollReveal>
           <div className="section-header">
-            <span className="section-label">Brand & Form</span>
-            <h2 className="section-title">Graphic Design</h2>
+            <span className="section-label">Graphic Design</span>
+            <h2 className="section-title">My Designs</h2>
             <div className="separator" />
             <p className="section-subtitle">
-              Visual identity systems, editorial layouts, and user experiences 
-              built on grid systems, hierarchy, and purpose.
+              Visual identity systems and editorial layouts 
+              built on grid systems and purpose.
             </p>
           </div>
         </ScrollReveal>
