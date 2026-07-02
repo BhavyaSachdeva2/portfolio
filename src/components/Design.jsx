@@ -109,30 +109,61 @@ const Design = () => {
                 exit={{ y: 50, opacity: 0 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 onClick={(e) => e.stopPropagation()}
+                /* Dynamically changes width constraints if it's a banner layout */
+                style={{ 
+                  maxWidth: activeProject.category === 'ui/ux' || activeProject.title.toLowerCase().includes('banner') ? '1100px' : '900px',
+                  width: '90%'
+                }}
               >
                 {/* Close Button */}
                 <button className="design-modal-close" onClick={closeProject} aria-label="Close modal">
                   <CloseIcon />
                 </button>
 
-                <div className="design-modal-content">
-                  {/* Left Side: Media */}
-<div className="design-modal-media" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000000' }}>
-  <img 
-    src={activeProject.image} 
-    alt={activeProject.title} 
-    style={{ objectFit: 'contain', width: '100%', height: '100%', maxHeight: '70vh' }} 
-  />
-</div>
+                {/* DYNAMIC LAYOUT CONTAINER */}
+                <div 
+                  className="design-modal-content"
+                  style={{
+                    display: 'flex',
+                    flexDirection: activeProject.title.toLowerCase().includes('banner') ? 'column' : 'row',
+                    gap: '2rem'
+                  }}
+                >
+                  {/* Left/Top Side: Media */}
+                  <div 
+                    className="design-modal-media" 
+                    style={{ 
+                      width: '100%', 
+                      background: 'transparent',
+                      display: 'flex',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <img 
+                      src={activeProject.image} 
+                      alt={activeProject.title} 
+                      style={{ 
+                        width: '100%', 
+                        height: 'auto', 
+                        objectFit: 'cover', 
+                        borderRadius: '4px' 
+                      }} 
+                    />
+                  </div>
 
-                  {/* Right Side: Details */}
-                  <div className="design-modal-info">
+                  {/* Right/Bottom Side: Details */}
+                  <div 
+                    className="design-modal-info"
+                    style={{ 
+                      width: '100%',
+                      padding: activeProject.title.toLowerCase().includes('banner') ? '0 1rem 1rem 1rem' : '0'
+                    }}
+                  >
                     <div>
                       <span className="design-modal-category">{activeProject.category}</span>
-                      <h3 className="design-modal-title">{activeProject.title}</h3>
+                      <h3 className="design-modal-title" style={{ fontSize: '1.75rem', marginTop: '0.5rem' }}>{activeProject.title}</h3>
                       <div className="design-modal-separator" />
                       
-                      {/* Safety check for description */}
                       {activeProject.description && (
                         <p className="design-modal-desc">{activeProject.description}</p>
                       )}
@@ -140,7 +171,7 @@ const Design = () => {
 
                     {/* Metadata table - only renders if client, year, or tools exist */}
                     {(activeProject.client || activeProject.year || activeProject.tools) && (
-                      <div className="design-modal-meta-grid">
+                      <div className="design-modal-meta-grid" style={{ marginTop: '1.5rem' }}>
                         {activeProject.client && (
                           <div className="meta-item">
                             <span className="meta-label">Client</span>
