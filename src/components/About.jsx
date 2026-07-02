@@ -2,7 +2,8 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 
-// Animated counter component
+// Animated counter component (Keep if you still want to use it elsewhere, 
+// otherwise you can remove this entire block too)
 const AnimatedCounter = ({ target, suffix = '' }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -10,7 +11,6 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
 
   useEffect(() => {
     if (!isInView) return;
-
     let start = 0;
     const duration = 2000;
     const startTime = performance.now();
@@ -18,30 +18,19 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
     const animate = (currentTime) => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-
-      // Ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       const current = Math.floor(eased * target);
-
       setCount(current);
-
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
+      if (progress < 1) requestAnimationFrame(animate);
     };
-
     requestAnimationFrame(animate);
   }, [isInView, target]);
 
-  return (
-    <span ref={ref}>
-      {count}
-      {suffix}
-    </span>
-  );
+  return <span ref={ref}>{count}{suffix}</span>;
 };
 
-
+// Main About Component
+const About = () => {
   return (
     <section className="section" id="about" style={{ background: 'var(--clr-bg-alt)' }}>
       <div className="container">
@@ -89,22 +78,6 @@ const AnimatedCounter = ({ target, suffix = '' }) => {
             </ScrollReveal>
 
             <ScrollReveal delay={0.45}>
-              <div className="about-stats">
-                {stats.map((stat, i) => (
-                  <div className="stat-item" key={i}>
-                    <div className="stat-number">
-                      <AnimatedCounter
-                        target={stat.number}
-                        suffix={stat.suffix}
-                      />
-                    </div>
-                    <div className="stat-label">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.55}>
               <div className="about-disciplines">
                 <div className="discipline-col">
                   <h4 className="discipline-col-title">Photography</h4>
