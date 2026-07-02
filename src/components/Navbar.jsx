@@ -41,7 +41,8 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            <span className="logo-accent">Arnav <span className="logo-accent">Tanwar
+            <span className="logo-accent">Arnav </span>
+            <span className="logo-accent">Tanwar</span>
           </a>
 
           <div className="navbar-links">
@@ -68,7 +69,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
