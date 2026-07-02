@@ -58,15 +58,9 @@ const Hero = () => {
           Photography • Video Editing • Graphic Design
         </motion.span>
 
-        <motion.h1 className="hero-title" variants={itemVariants}>
-"Design gives form to ideas, editing brings flow to time, and photography captures the light that connects them all."
-
-
-        </motion.h1>
-
+      
         <motion.p className="hero-subtitle" variants={itemVariants}>
-          Every medium has its unique voice. I tell compelling stories through 
-          frozen light, cinematic movement, and structured visual design.
+"Design gives form to ideas, editing brings flow to time, and photography captures the light that connects them all."
         </motion.p>
 
         <motion.button
