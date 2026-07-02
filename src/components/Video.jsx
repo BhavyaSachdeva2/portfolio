@@ -36,12 +36,11 @@ const Video = () => {
       <div className="container">
         <ScrollReveal>
           <div className="section-header">
-            <span className="section-label">Cinematic Work</span>
-            <h2 className="section-title">Motion & Film</h2>
+            <span className="section-label">Videos</span>
+            <h2 className="section-title">My Edits</h2>
             <div className="separator" />
             <p className="section-subtitle">
-              Beyond the still frame — cinematic stories captured in motion,
-              light, and sound.
+              Recordings — Shot and Edited
             </p>
           </div>
         </ScrollReveal>
