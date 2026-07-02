@@ -30,11 +30,8 @@ const designs = [
     id: 4,
     title: 'Vanguard Architecture Magazine',
     category: 'editorial',
-    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1000&h=700&fit=crop',
-    client: 'Vanguard Publishing',
-    year: '2024',
-    description: 'Art direction and layout design for a quarterly publication highlighting brutalist and modern architecture. Features structural typographic systems, asymmetric grid alignments, and ample breathing room that enables architectural photography to stand out as the primary visual element.',
-    tools: ['InDesign', 'Photoshop']
+    image: 'https://res.cloudinary.com/z3zkffz7/image/upload/v1783017953/7c4d3c218109359.679ba6bdecb2e_tpldeo.png',
+
   },
   {
     id: 5,
